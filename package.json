@@ -1,0 +1,26 @@
+{
+  "name": "piechart_app_ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t reactify js/app.jsx -o dist/bundle.js",
+    "watch": "watchify -t reactify js/*.jsx -o dist/bundle.js -dv",
+    "start": "python -m SimpleHTTPServer"
+  },
+  "author": "Andy Pham",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^1.0.2",
+    "director": "^1.2.0",
+    "react": "^0.13.2",
+    "react-bootstrap": "^0.20.3",
+    "react-chartjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.1"
+  }
+}
